@@ -1,17 +1,72 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\imrtee\\XProjects\\WebAdvert.AdvertAPI\\AdvertAPI\\AdvertAPI.csproj": {}
+    "c:\\Users\\imrtee\\XProjects\\WebAdvert.AdvertAPI\\AdvertAPI\\AdvertAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\imrtee\\XProjects\\WebAdvert.AdvertAPI\\AdvertAPI\\AdvertAPI.csproj": {
+    "c:\\Users\\imrtee\\XProjects\\WebAdvert.AdvertAPI\\AdvertAPI.Models\\AdvertAPI.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\imrtee\\XProjects\\WebAdvert.AdvertAPI\\AdvertAPI\\AdvertAPI.csproj",
-        "projectName": "AdvertAPI",
-        "projectPath": "C:\\Users\\imrtee\\XProjects\\WebAdvert.AdvertAPI\\AdvertAPI\\AdvertAPI.csproj",
+        "projectUniqueName": "c:\\Users\\imrtee\\XProjects\\WebAdvert.AdvertAPI\\AdvertAPI.Models\\AdvertAPI.Models.csproj",
+        "projectName": "AdvertAPI.Models",
+        "projectPath": "c:\\Users\\imrtee\\XProjects\\WebAdvert.AdvertAPI\\AdvertAPI.Models\\AdvertAPI.Models.csproj",
         "packagesPath": "C:\\Users\\imrtee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\imrtee\\XProjects\\WebAdvert.AdvertAPI\\AdvertAPI\\obj\\",
+        "outputPath": "c:\\Users\\imrtee\\XProjects\\WebAdvert.AdvertAPI\\AdvertAPI.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\imrtee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\Users\\imrtee\\XProjects\\WebAdvert.AdvertAPI\\AdvertAPI\\AdvertAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\imrtee\\XProjects\\WebAdvert.AdvertAPI\\AdvertAPI\\AdvertAPI.csproj",
+        "projectName": "AdvertAPI",
+        "projectPath": "c:\\Users\\imrtee\\XProjects\\WebAdvert.AdvertAPI\\AdvertAPI\\AdvertAPI.csproj",
+        "packagesPath": "C:\\Users\\imrtee\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\imrtee\\XProjects\\WebAdvert.AdvertAPI\\AdvertAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -29,7 +84,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "c:\\Users\\imrtee\\XProjects\\WebAdvert.AdvertAPI\\AdvertAPI.Models\\AdvertAPI.Models.csproj": {
+                "projectPath": "c:\\Users\\imrtee\\XProjects\\WebAdvert.AdvertAPI\\AdvertAPI.Models\\AdvertAPI.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -40,6 +99,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "AWSSDK.DynamoDBv2": {
+              "target": "Package",
+              "version": "[3.3.104.26, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
