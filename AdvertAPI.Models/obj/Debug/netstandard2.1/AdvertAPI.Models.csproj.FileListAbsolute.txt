@@ -1,0 +1,8 @@
+C:\Users\imrtee\XProjects\WebAdvert.AdvertAPI\AdvertAPI.Models\bin\Debug\netstandard2.1\AdvertAPI.Models.deps.json
+C:\Users\imrtee\XProjects\WebAdvert.AdvertAPI\AdvertAPI.Models\bin\Debug\netstandard2.1\AdvertAPI.Models.dll
+C:\Users\imrtee\XProjects\WebAdvert.AdvertAPI\AdvertAPI.Models\bin\Debug\netstandard2.1\AdvertAPI.Models.pdb
+C:\Users\imrtee\XProjects\WebAdvert.AdvertAPI\AdvertAPI.Models\obj\Debug\netstandard2.1\AdvertAPI.Models.csprojAssemblyReference.cache
+C:\Users\imrtee\XProjects\WebAdvert.AdvertAPI\AdvertAPI.Models\obj\Debug\netstandard2.1\AdvertAPI.Models.AssemblyInfoInputs.cache
+C:\Users\imrtee\XProjects\WebAdvert.AdvertAPI\AdvertAPI.Models\obj\Debug\netstandard2.1\AdvertAPI.Models.AssemblyInfo.cs
+C:\Users\imrtee\XProjects\WebAdvert.AdvertAPI\AdvertAPI.Models\obj\Debug\netstandard2.1\AdvertAPI.Models.dll
+C:\Users\imrtee\XProjects\WebAdvert.AdvertAPI\AdvertAPI.Models\obj\Debug\netstandard2.1\AdvertAPI.Models.pdb

@@ -1,6 +1,7 @@
 ﻿
 namespace AdvertApi.Models
 {
+    // oy2actewb3dcrgc5rtsq45jqqfb6e2xedbyzl37baad24m
     public class AdvertModel
     {
         public string Title { get; set; }

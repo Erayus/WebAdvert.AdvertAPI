@@ -19,9 +19,9 @@ namespace AdvertApi.Services
             _mapper = mapper;
         }
 
-        public async Task<string> AddAsync(AdvertModel model)
+        public async Task<string> AddAsync(AdvertModel advert)
         {
-            var dbModel = _mapper.Map<AdvertForCreationDto>(model);
+            var dbModel = _mapper.Map<AdvertForCreationDto>(advert);
 
             dbModel.Id = Guid.NewGuid().ToString();
             dbModel.CreationDateTime = DateTime.UtcNow;
@@ -50,17 +50,17 @@ namespace AdvertApi.Services
             }
         }
 
-        public async Task ConfirmAsync(ConfirmAdvertModel model)
+        public async Task ConfirmAsync(ConfirmAdvertModel confirmAdvert)
         {
             using (var client = new AmazonDynamoDBClient())
             {
                 using (var context = new DynamoDBContext(client))
                 {
-                    var record = await context.LoadAsync<AdvertForCreationDto>(model.Id);
-                    if (record == null) throw new KeyNotFoundException($"A record with ID={model.Id} was not found.");
-                    if (model.Status == AdvertStatus.Active)
+                    var record = await context.LoadAsync<AdvertForCreationDto>(confirmAdvert.Id);
+                    if (record == null) throw new KeyNotFoundException($"A record with ID={confirmAdvert.Id} was not found.");
+                    if (confirmAdvert.Status == AdvertStatus.Active)
                     {
-                        record.FilePath = model.FilePath;
+                        record.FilePath = confirmAdvert.FilePath;
                         record.Status = AdvertStatus.Active;
                         await context.SaveAsync(record);
                     }
